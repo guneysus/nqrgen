@@ -20,6 +20,9 @@ namespace nqrgen
         [Option('c', "correction", HelpText = "Error Correction", Default = ErrorCorrection.Low)]
         public ErrorCorrection Correction { get; set; }
 
+        [Option('v', "value", HelpText = "Value")]
+        public string Content { get; set; }
+
     }
 
     public enum ErrorCorrection

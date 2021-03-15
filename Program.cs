@@ -54,6 +54,25 @@ namespace nqrgen
                                     break;
                             }
                         }
+                    } else
+                    {
+                        switch (options.RenderType)
+                        {
+                            case RenderType.Console:
+                                {
+                                    var writer = QR.createBarcodeWriterForConsole();
+                                    _ = writer.Write(options.Content);
+                                    break;
+                                }
+                            case RenderType.File:
+                                {
+                                    var task = QR.New(options.Content, options);
+                                    task.Process();
+                                    break;
+                                }
+                            default:
+                                break;
+                        }
                     }
                 });
         }

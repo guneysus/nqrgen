@@ -117,10 +117,10 @@ namespace nqrgen
                 Format = BarcodeFormat.QR_CODE,
                 Options = new QrCodeEncodingOptions
                 {
-                    Height = 10,
-                    Width = 10,
+                    Height = 1,
+                    Width = 1,
                     Margin = 1,
-                    ErrorCorrection = ErrorCorrectionLevel.M
+                    ErrorCorrection = ErrorCorrectionLevel.L
                 },
                 Renderer = new CustomBitmapRenderer()
             };
