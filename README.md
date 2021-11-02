@@ -1,7 +1,13 @@
 # nqrgen
 
-
 ![demo#1](img/WindowsTerminal_Ob0Jvv7Kj1.png)
+
+
+## Installation
+
+```shell
+scoop install https://raw.githubusercontent.com/guneysus/nqrgen/master/nqrgen.json
+```
 
 ## usage
 
