@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "url": "https://github.com/guneysus/nqrgen/releases/download/0.0.1/nqrgen.exe",
   "autoupdate": {
-    "url": "https://github.com/guneysus/nqrgen/releases/download/v$version/nqrgen.exe"
+    "url": "https://github.com/guneysus/nqrgen/releases/download/$version/nqrgen.exe"
   },
   "bin": "nqrgen.exe"
 }
