@@ -14,15 +14,6 @@ namespace nqrgen
         static void Main(string[] args)
         {
 
-#if DEBUG
-            Console.WriteLine("Waiting for debugger");
-            do
-            {
-                Thread.Sleep(100);
-            } while (!System.Diagnostics.Debugger.IsAttached);
-            Console.WriteLine("Debugger attached");
-#endif
-
             Parser.Default.ParseArguments<Options>(args)
                 .WithNotParsed(errors => {
                     foreach (var err in errors)

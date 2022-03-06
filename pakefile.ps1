@@ -7,3 +7,7 @@ function publish {
       -p:PublishSingleFile=true `
       -o dist/
 }
+
+function run {
+  dotnet run -r win-x64 -- -v "www.google.com"
+}
